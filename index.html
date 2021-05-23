@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+  </head>
+  <body>
+
+    <form action="submited.html" method="get">
+      <h1>Pateikite savo skundą</h1>
+      <h4>Jūsų kontaktiniai duomenys</h4>
+      <label for="name"></label>
+      <input id="name" type="name" name="NAME" placeholder="Vardas" size="40" required>
+      <br><br>
+      <label for="surname"></label>
+      <input id="surname" type="surname" name="SURNAME" placeholder="Pavardė" size="40" required>
+      <br><br>
+      <label for="email"></label>
+      <input id="email" type="email" name="EMAIL" placeholder="El.paštas" size="40" required>
+      <br><br>
+      <label for="phone"></label>
+      <input id="phone" type="tel" name="PHONE" placeholder="Telefono numeris" size="40" required>
+      <br><br>
+      <h4>Apsilankymo laikas</h4>
+      <label for="date"></label>
+      <input id="date" type="date" name="DATE" placeholder="Apsilankymo data" size="40" required>
+      <br><br>
+
+      <h4>Nusiskundimo tipas</h4>
+      <div class="type">
+  <input type="radio" id="quality" name="quality" value="quality">
+  <label for="quality">Prekės kokybė</label><br>
+  <input type="radio" id="service" name="service" value="service">
+  <label for="service">Aptarnavimas</label><br>
+  <input type="radio" id="other" name="other" value="other">
+  <label for="other">Kiti nusiskundimai</label>
+  </div>
+      <br>
+
+      <h4>Pridėkite nuotrauką</h4>
+      <input type="file" id="myFile" name="file">
+      <br><br>
+
+      <h4>Plačiau apie nusiskundimą</h4>
+      <textarea name="description" rows="4" cols="42"></textarea>
+      <br><br>
+      <input type="checkbox" id="rules" name="rules" value="Rules">
+       <label for="Rules"> Sutinku su parduotuvės privatumo politika</label>
+      <br><br><br>
+      <button type="submit" name="Button">
+        <span>Pateikti</span>
+      </button>
+      <br><br>
+    </form>
+  </body>
+</html>
